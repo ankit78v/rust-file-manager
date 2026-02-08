@@ -44,4 +44,5 @@ cd rust-file-manager
 //Install Dependencies
 rustup update
 // Run Server
+cargo build
 cargo run
