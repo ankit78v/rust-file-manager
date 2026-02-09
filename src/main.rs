@@ -429,7 +429,8 @@ async fn main() -> std::io::Result<()> {
             .route("/preview/{filename}", web::get().to(preview))
             .route("/delete/{filename}", web::get().to(delete))
     })
-    .bind(("0.0.0.0", 3076))?
+    .bind(("127.0.0.1", 8000))? // You can change this Port For Runing 
     .run()
     .await
 }
+
